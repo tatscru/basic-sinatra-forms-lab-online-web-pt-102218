@@ -5,10 +5,18 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+    <h1>Team Name: <%= @name %></h1>
+    <p>Coach: <%= @coach %> </p>
+    <p>Point Guard: <%= @pg %></p>
+    <p>Shooting Guard: <%= @sg %></p>
+    <p>Small Forward: <%= @sf %></p>
+    <p>Power Forward: <%= @pf %></p>
+    <p>Center: <%= @c %></p>
+  
  </body>
 </html>
 
+# this is where the form is gathering the data, then pushed to POST /team for it to display 
+#params[:name]  = @name 
+<!--The name attribute of an <input> corresponds to a key in the params hash for that data.-->
 
